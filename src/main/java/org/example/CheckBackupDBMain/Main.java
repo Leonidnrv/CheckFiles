@@ -1,4 +1,4 @@
-package org.example;
+package org.example.CheckBackupDBMain;
 
 import java.io.File;
 import java.time.LocalDate;
@@ -12,7 +12,8 @@ public class Main {
         for(File f : folderContent) {
             if(f.isFile()){
                 if(findDiffDaysFromToday(f) > 14){
-                    deleteFile(f);
+                    System.out.println(f.getName());
+                    //deleteFile(f);
                 }
             }
         }
@@ -23,11 +24,16 @@ public class Main {
         //seteaza formatul de data yyyyMMdd
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
         //taie numele de la caracterul _ pana la . si stocheaza doar "20250801"
-        String datePart = currentFile.getName().substring(currentFile.getName().indexOf("_") + 1, currentFile.getName().indexOf("."));
-        LocalDate fileDate = LocalDate.parse(datePart, formatter); // fileDate = data fisierului in tip obiect LocalDate
+        //String datePart = currentFile.getName().substring(currentFile.getName().indexOf("_") + 1, currentFile.getName().indexOf("."));
+        //LocalDate fileDate = LocalDate.parse(datePart, formatter); // fileDate = data fisierului in tip obiect LocalDate
         LocalDate todayDate = LocalDate.now(); // todayDate = data curenta in tip obiect LocalDate. Aceste doua variabile sunt create pentru a fi folosite in ChronoUnit
 
-        return ChronoUnit.DAYS.between(fileDate, todayDate);
+
+        String[] datePartFinal = currentFile.getName().split("\\.");
+        LocalDate fileDateFinal = LocalDate.parse(datePartFinal[2], formatter);
+
+        //return ChronoUnit.DAYS.between(fileDate, todayDate);
+        return ChronoUnit.DAYS.between(fileDateFinal, todayDate);
     }
 
 
