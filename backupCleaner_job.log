@@ -118,3 +118,79 @@ Sep 15, 2025 5:29:55 PM org.example.CheckBackupDBMain.Main main
 INFO: S-a sters fisierul tempdb.DB.20250809.180014.9727 - Copy.txt
 Sep 15, 2025 5:29:55 PM org.example.CheckBackupDBMain.Main main
 INFO: Succes!
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul master.DB.20250809.180018.97028.000 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul master.DB.20250909.180018.97028.000.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul model.DB.20250809.180001.86024 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul model.DB.20250909.180001.86024.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul NSP.DB.20250809.180106.97032 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul NSP.DB.20250909.180106.97032.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sabsystemprocs.DB.20250809.180038.97030 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sabsystemprocs.DB.20250909.180038.97030.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptempdb.DB.20250809.180004.97026 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptempdb.DB.20250909.180004.97026.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptools.DB.20250809.180041.97031 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptools.DB.20250909.180041.97031.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybmgmtdb.DB.20250809.180020.97029.000 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybmgmtdb.DB.20250909.180020.97029.000.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybsystemdb.DB.20250809.180003.97025 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybsystemdb.DB.20250909.180003.97025.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul tempdb.DB.20250809.180014.9727 - Copy.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul tempdb.DB.20250909.180014.9727.txt
+Sep 16, 2025 10:08:04 AM org.example.CheckBackupDBMain.Main main
+SEVERE: Job-ul a esuat!
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul master.DB.20250809.180018.97028.000 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul master.DB.20250909.180018.97028.000.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul model.DB.20250809.180001.86024 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul model.DB.20250909.180001.86024.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul NSP.DB.20250809.180106.97032 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul NSP.DB.20250909.180106.97032.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sabsystemprocs.DB.20250809.180038.97030 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sabsystemprocs.DB.20250909.180038.97030.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptempdb.DB.20250809.180004.97026 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptempdb.DB.20250909.180004.97026.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptools.DB.20250809.180041.97031 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul saptools.DB.20250909.180041.97031.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybmgmtdb.DB.20250809.180020.97029.000 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybmgmtdb.DB.20250909.180020.97029.000.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybsystemdb.DB.20250809.180003.97025 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul sybsystemdb.DB.20250909.180003.97025.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul tempdb.DB.20250809.180014.9727 - Copy.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+INFO: S-a sters fisierul tempdb.DB.20250909.180014.9727.txt
+Sep 16, 2025 10:09:16 AM org.example.CheckBackupDBMain.Main main
+SEVERE: Job-ul a esuat!

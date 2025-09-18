@@ -1,5 +1,4 @@
 package org.example.CheckBackupDBMain;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -21,11 +20,12 @@ public class Main {
             System.err.println("Error in log_job_backupCleaner.log " + ex.getMessage());
             ex.printStackTrace();
         }
-        String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
+        //String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
+        String backupDir = "k:\\backup\\NSP\\backupsNSP"; //Nissa PRD
         File[] folderContent = new File(backupDir).listFiles();//stocam fisierele din folder
         for(File f : folderContent) {
             if(f.isFile()){
-                if(findDiffDaysFromToday(f) > 14){
+                if(findDiffDaysFromToday(f) > 6){
                     System.out.println(f.getName());
                     countNumberOfFiles++;
                     //deleteFile(f);
@@ -60,4 +60,6 @@ public class Main {
         }
         return false;
     }
+
+    //ToDo -> inainte sa stearga backup-urile vechi trebuie sa verifice daca sunt cel putin doua back-upuri existente.
 }
