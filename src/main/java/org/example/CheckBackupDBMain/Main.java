@@ -23,8 +23,8 @@ public class Main {
             System.err.println("Error in log_job_backupCleaner.log " + ex.getMessage());
             ex.printStackTrace();
         }
-        //String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
-        String backupDir = "k:\\backup\\NSP\\backupsNSP"; //Nissa PRD
+        String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
+        //String backupDir = "k:\\backup\\NSP\\backupsNSP"; //Nissa PRD
 
         if(!hasMoreThanTwoBackups(backupDir)){
             //Daca avem mai putin de doua backup-uri vom intrerupe procesul
@@ -35,17 +35,16 @@ public class Main {
             for(File f : folderContent) {
                 if(f.isFile()){
                     if(findDiffDaysFromToday(f) > 6){
-                        System.out.println(f.getName());
                         countNumberOfFiles++;
                         //deleteFile(f);
                         logger.info("S-a sters fisierul " + f.getName());
                     }
                 }
             }
-            if (countNumberOfFiles != 9) {
-                logger.severe("Job-ul a esuat!");
+            if (countNumberOfFiles % 9 != 0) {
+                logger.severe("Job-ul de executare backup a esuat!");
             }else {
-                logger.info("Succes!");
+                logger.info("Job-ul de executare backup a rulat cu succes.");
             }
             countNumberOfFiles = 0;
         }
