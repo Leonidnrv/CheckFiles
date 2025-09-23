@@ -23,8 +23,8 @@ public class Main {
             System.err.println("Error in log_job_backupCleaner.log " + ex.getMessage());
             ex.printStackTrace();
         }
-        String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
-        //String backupDir = "k:\\backup\\NSP\\backupsNSP"; //Nissa PRD
+        //String backupDir = "C:\\Users\\Leonid Pintea\\Documents\\CheckBackupDB_TEST";
+        String backupDir = "k:\\backup\\NSP\\backupsNSP"; //Nissa PRD
 
         if(!hasMoreThanTwoBackups(backupDir)){
             //Daca avem mai putin de doua backup-uri vom intrerupe procesul
@@ -34,7 +34,7 @@ public class Main {
             File[] folderContent = new File(backupDir).listFiles();//stocam fisierele din folder
             for(File f : folderContent) {
                 if(f.isFile()){
-                    if(findDiffDaysFromToday(f) > 6){
+                    if(findDiffDaysFromToday(f) > 5){
                         countNumberOfFiles++;
                         //deleteFile(f);
                         logger.info("S-a sters fisierul " + f.getName());
