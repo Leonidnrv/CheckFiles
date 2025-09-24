@@ -31,8 +31,8 @@ public class Main {
             logger.info("Nu este necesar sa stergem backup-ul vechi. Trebuie sa existe minim doua backup-uri in sistem!");
             return;
         }else{
-            File[] folderContent = new File(backupDir).listFiles();//stocam fisierele din folder
-            for(File f : folderContent) {
+            var folderContent = new File(backupDir).listFiles();//stocam fisierele din folder
+            for(var f : folderContent) {
                 if(f.isFile()){
                     if(findDiffDaysFromToday(f) > 5){
                         countNumberOfFiles++;
@@ -47,7 +47,8 @@ public class Main {
                 logger.info("Job-ul de executare backup a rulat cu succes.");
             }
             countNumberOfFiles = 0;
-        }
+        }//sa extrag o clasa numita backuppolicy care sa se preocupe cu locatia folderului de backup. Cate zile sa tine backup-ul? cate fisiere ma astept sa sterg la fiecare rulare ?
+        //sa folosesc o biblioteca commons cmd lines
 
     }
 
